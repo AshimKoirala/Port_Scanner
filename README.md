@@ -1,19 +1,10 @@
-# 🔎 Python Port Scanner ( Can be said as mini NMAP? )
+# 🔎 Python Port Scanner ( Inspired by Nmap )
 
 A simple TCP-based port scanner built using Python's socket library.
 
 ## 📌 Description
-This project scans common ports on a target system to identify open services.
-It demonstrates basic networking and cybersecurity reconnaissance concepts.
-
-## 🚀 Features
-- Uses socket programming
-- Scans common TCP ports
-- Identifies open ports
-
-## 🛠 Technologies Used
-- Python 3
-- Socket Library
+This project is a basic TCP port scanner written in Python using the built-in socket library.  
+It attempts to establish TCP connections to a list of common ports on a target system to determine which ports are open.
 
 ## ▶️ How to Run
 
@@ -31,15 +22,36 @@ python port_scanner.py
 
 4. Enter target IP or domain when prompted.
 
+
+## 🖥 Example Output
+
+Enter target IP or domain : scanmap.nmap.org
+
+Port 22 is OPEN
+Port 80 is OPEN
+
+Scan completed
+
+### 🔍 What Happens Behind the Scenes?
+
+1. A TCP socket is created.
+2. The program attempts to connect to a target port.
+3. The operating system performs the TCP three-way handshake:
+   SYN → SYN/ACK → ACK
+4. If the connection succeeds, the port is considered open.
+5. The connection is closed and the next port is tested.
+
+
+## 🚀 Features
+- Uses socket programming
+- Scans common TCP ports
+- Identifies open ports
+
 ## ⚠ Disclaimer
 This tool is for educational purposes only.
 Do not scan systems without permission.
 
-## 📚 Concepts Learned
-- TCP connections
-- Port scanning
-- Network reconnaissance
-- Python socket programming
 
 ## 👤 Author
 Ashim
+
