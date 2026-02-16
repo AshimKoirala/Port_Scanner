@@ -10,15 +10,19 @@ It attempts to establish TCP connections to a list of common ports on a target s
 
 1. Clone the repository:
 
-git clone https://github.com/AshimKoirala/Port_Scanner.git
+   ``` bash
+    git clone https://github.com/AshimKoirala/Port_Scanner.git
+
 
 2. Navigate to the folder:
 
-cd Port_Scanner
+   ```bash
+   cd Port_Scanner
 
 3. Run the script:
 
-python port_scanner.py
+   ```bash
+   python port_scanner.py
 
 4. Enter target IP or domain when prompted.
 
@@ -54,4 +58,5 @@ Do not scan systems without permission.
 
 ## 👤 Author
 Ashim
+
 
